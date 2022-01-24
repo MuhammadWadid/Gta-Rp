@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Figma to html</title>
     <link href="http://fonts.cdnfonts.com/css/akrobat" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <Style>
     * {
+        font-family: Akrobat;
         background: border-box;
         margin: 0px;
     }
 
     .Wrapper {
-        background: linear-gradient(270.45deg, rgba(0, 0, 0, 0) 46.36%, #252525 99.14%);
-        background: url("./Images/Background.png");
+        background-image:linear-gradient(-270.45deg, rgba(0, 0, 0, 0) 46.36%, #252525 99.14%),url("./Images/Background.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
@@ -26,7 +26,6 @@
         height: 1080px;
         left: 0px;
         top: 0px;
-        opacity: 0.9
     }
 
     .Creat_tag {
@@ -45,7 +44,6 @@
         height: 94px;
         left: 1547px;
         top: 60px;
-        font-family: Akrobat;
         font-style: normal;
         font-weight: 800;
         font-size: 48px;
@@ -63,7 +61,7 @@
         left: 1512.5px;
         top: 176px;
 
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.15);
         border: 1px solid rgba(255, 255, 255, 0.15);
         box-sizing: border-box;
     }
@@ -75,10 +73,70 @@
         height: 62px;
         left: 1512.5px;
         top: 246px;
-        background: rgba(255, 255, 255, 0.1);
+
+        background: rgba(255, 255, 255, 0.15);
         border: 1px solid rgba(255, 255, 255, 0.15);
         box-sizing: border-box;
     }
+    .parallelogram2:hover ,.parallelogram:hover , .Option1:hover, .Option2:hover{
+        border: 1px solid white;
+    }
+    .form-control2{
+        border: none;
+        text-decoration: underline 1px black;
+        background: transparent;
+        width: 70%;
+        display: block;
+        color: white;
+        
+    }
+    .form-control2:focus{
+        border: none;
+        background: transparent;
+        font-weight: bold;
+    
+
+    }
+    .form-control2::placeholder{
+        color: white;
+        font-weight: lighter
+    }
+    .form-group{
+        margin-left: 20px;
+    }
+.Select{
+transform: skew(-20deg);
+position: absolute;
+width: 162px;
+height: 104px;
+left: 1510px;
+top: 325px;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.15);
+box-sizing: border-box;
+}
+.Option1{
+position: absolute;
+transform: skew(-20deg);
+width: 121.5px;
+height: 78px;
+left: 1684px;
+top: 339px;
+background: linear-gradient(180deg, rgba(102, 255, 78, 0) 0%, rgba(102, 255, 78, 0.3264) 100%), rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.15);
+box-sizing: border-box;
+}
+.Option2{
+    position: absolute;
+transform: skew(-20deg);
+width: 121.5px;
+height: 78px;
+left: 1814px;
+top: 339px;
+background: linear-gradient(180deg, rgba(102, 255, 78, 0) 0%, rgba(102, 255, 78, 0.3264) 100%), rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.15);
+box-sizing: border-box;
+}
 </Style>
 
 <body>
@@ -89,16 +147,29 @@
             Character <br>Creation
         </p>
         <div class="parallelogram">
-
+            <div class="form-group">
+                    <label for="name" class="control-label" >First Name</label>
+                <input type="text" name="Name" id="Name" placeholder="Enter First Name" class="form-control2" autofocus >
+            </div>
+            <!-- <div class="form-group">
+                </div> -->
         </div>
         <div class="parallelogram2">
-
+                <div class="form-group">
+                        <label for="name" class="control-label" >Last Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Last Name" class="form-control2" >
+                </div>
         </div>
-        <div class="parallelogram3">
+        <div class="Select"></div>
+        <div class="Option1"></div>
+        <div class="Option2"></div>
 
-        </div>
+        <div class="Select"></div>
+        <div class="Option1"></div>
+        <div class="Option2"></div>
+
     </div>
-
+<script src="./javascript/bootstrap.min.js"></script>
 </body>
 
 </html>
